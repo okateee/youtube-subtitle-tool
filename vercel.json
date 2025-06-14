@@ -1,19 +1,19 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "api/get-subtitles.py",
-      "use": "@vercel/python"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/get-subtitles",
-      "dest": "/api/get-subtitles.py"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
-  ]
+    "version": 2,
+    "builds": [
+        {
+            "src": "api/get-subtitles.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/api/get-subtitles",
+            "dest": "/api/get-subtitles.py"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/index.html"
+        }
+    ]
 }
